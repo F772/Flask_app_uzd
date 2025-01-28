@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>Iveskite nauja auto</h4>
+<form action="/auto/naujas" method="post">
+    <p>Auto pavadinimas:</p>
+    <p><input type="text" name="gamintojaslaukelis"></p>
+    <p>Auto modelis:</p>
+    <p><input type="text" name="modelislaukelis"></p>
+    <p>Auto spalva:</p>
+    <p><input type="text" name="spalvalaukelis"></p>
+    <p>Auto metai:</p>
+    <p><input type="text" name="metailaukelis"></p>
+    <p>Auto kaina:</p>
+    <p><input type="text" name="kainalaukelis"></p>
+    <p><input type="submit" value="issaugoti"></p>
+</form>
+{% endblock %}
